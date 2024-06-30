@@ -1,0 +1,3 @@
+**Bienvenidos a mi portafolio web**
+
+ _Aquí encontrarán uno de mis primeros proyectos, que reflejan mi pasión y habilidades en el desarrollo web y otras áreas de la tecnología. Cada proyecto en Github que verán a continuación representa un desafío superado, una solución implementada y un aprendizaje adquirido. Estoy constantemente buscando mejorar y aprender nuevas técnicas para seguir creciendo profesionalmente_
