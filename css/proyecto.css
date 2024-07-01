@@ -1,0 +1,80 @@
+.proyectos {
+    width:80% ;
+    padding: 1rem;
+    background: var(--fondo-proyecto)  ;
+}
+/* ESTE ES EL CONTENEDOR GENERAL QUE ENGLOBA A LOS PROYECTOS  */
+.galeria-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+/* COMO ES EL CONTENEDOR DEL PROYECTO EN GENERAL */
+.proyectos {
+    background-color: rgb(53,52, 52); /* color de fondo de la atrjeta */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(33% - 40px); /*ajusta el ancho segun la cantidad de proyectos a mostrar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+/* IMAGEN DEL PROYECTO */
+.proyectos img {  /* aqui se observa que una vez que utiliza una clase,puedo poner al lado la etiqueta html que quiero que se modifique el estilo */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* TITULO DEL PROYECTO */
+.proyectos h3{
+    margin-top: 10px;
+    font-size: 1.2rem;
+
+}
+
+/* DESCRIPCION DEL PROYECTO */
+.proyectos p{
+    margin-top: 10px 0;
+}
+
+/* BOTONES ENLACES ANCOR */
+.proyectos a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* BOTONES DE LOS PROYECTOS */
+.proyectos a:hover{
+    background-color: #0056b3;
+}
+
+/*listo el modo default,ahora procedemos a hacerlo responsivo con las medias querias */
+
+/*celular pantallas pequeñas hasta 767 px  CELULAR*/
+@media (max-width: 767px){
+    .proyectos{
+        width: calc(100% - 40px);
+    }
+}
+
+/*tableta pantallas medianas entre 768 y 1023 px TABLET*/
+@media (min-width: 768px) and (max-width: 1023px){
+    .proyectos{
+        width: calc(50% - 40px);
+    }
+}
+
+/*escritorio pantallas anchas  1024px y superiores px DESKTOP*/
+@media (min-width: 1024px){
+    .proyectos{
+        width: calc(33% - 40px);
+    }
+   
+}
