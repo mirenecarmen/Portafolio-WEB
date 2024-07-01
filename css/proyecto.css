@@ -16,7 +16,7 @@
     background-color: rgb(53,52, 52); /* color de fondo de la atrjeta */
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 15px;
+    /* padding: 15px; */
     width: calc(33% - 40px); /*ajusta el ancho segun la cantidad de proyectos a mostrar */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
     text-align: center;

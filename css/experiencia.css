@@ -39,6 +39,7 @@
         width: 100%;
         padding: 1rem;
         margin-top: 1rem;
+        font-size: small;
         
     }
 
@@ -47,7 +48,12 @@
 
 /*escritorio pantallas anchas  1024px y superiores px*/
 @media (min-width: 1024px){
+    .navigation {
+        gap: 3rem;
+        justify-content: flex-end;
+        margin: 0 3rem;
+    }
     .container-EXPERIENCIA{
-        width: 50%;
+        width: 100%;
     }
 }

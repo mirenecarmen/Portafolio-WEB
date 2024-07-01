@@ -34,7 +34,7 @@ img.perfil{
 /*tableta pantallas medianas entre 768 y 1023 px*/
 @media (min-width: 767px) and (max-width: 1023px){
     .container-SOBREMI{
-        width: 100%;
+        width: 75%;
     }
 
 }
@@ -43,6 +43,6 @@ img.perfil{
 /*escritorio pantallas anchas  1024px y superiores px*/
 @media (min-width: 1024px){
     .container-SOBREMI{
-        width: 50%;
+        width: 100%;
     }
 }
