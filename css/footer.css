@@ -8,7 +8,7 @@ footer{
     /* */
 }
 /* contenedor principal del footer*/
-.footer{
+.footer-container {
     max-width: 1200px;/*ancho maximo de contenedor */
     margin: 0 auto;/* centrar el contenedor horizontalmente*/
     display: flex;/* usar flexbox para el layout*/
@@ -16,22 +16,23 @@ footer{
     align-items: center;/* centrar los elementos horizontalmente*/
 }
 /* estilos para la seccion de informacion del footer*/
-.footer-info{
-    margin-bottom: 10px;/* espacio debajo de la informacion*/
+.footer-info p {
+    margin-bottom: 10px;
+    text-align: center;/* espacio debajo de la informacion*/
 }
 /* estilos para la seccion de enlaces a redes sociales*/
-.footer-social{
+.footer-social {
     display: flex;/* usar flexbox para los iconos de redes sociales*/
     justify-content: center;/* centrar los iconos horizontalmente*/
     gap: 15px;/*espacio entre los iconos */
 }
 /* estilos  para cada enlace de red social*/
-.footer-social{
-    display: flex;/*usar flexbox para centrar el contenido dentro del enlace */
+.footer-social a {
+    display: inline-flex;/*usar flexbox para centrar el contenido dentro del enlace */
     align-items: center;/*centrar verticalemnte */
     justify-content: center;/* centrar horizontalmente*/
-    width: 40px;/* ancho del boton*/
-    height: 40px;/* altura del boton*/
+    width: 50px;/* ancho del boton*/
+    height: 50px;/* altura del boton*/
     border-radius: 50%;/* hacer los botones circulares*/
     background-color: #555;/*fondo del boton en color gris medio */
     transition: background-color 0.3s;/* transicion suave al cambiar el color del fondo*/
@@ -43,29 +44,30 @@ footer{
 
 /* estilos para los iconos SVG dentro de los enlaces*/
 .footer-social svg {
-    width: 2px;/*ancho del icono */
-    height: 2px;/* altura del icono*/
+    width: 24px;/*ancho del icono */
+    height: 24px;/* altura del icono*/
     fill: #fff;/*color del icono en blanco */
 
 }
 
 /* estilos responsivos para pantallas de tamaño tablet y menores*/
 @media (max-width: 768px){
-    .footer-container {
-        flex-direction: column;/* mantener loe elementos en una columna*/
-        align-items: center;/*centrar los elementos horizontalmente */
+    .footer {
+        flex-direction: column; /* Mantener los elementos en una columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
     }
+    
     .footer-social {
         flex-wrap: wrap;/* permitir que los iconos se envuelvan en multiples filas si es necesario*/
         gap: 10px;/* espacio entre los iconos*/
     }
     .footer-social a {
-        width: 35px;/*reducir el ancho del boton */
-        height: 35px;/*reducir la altura del boton */
+        width: 30px;/*reducir el ancho del boton */
+        height: 30px;/*reducir la altura del boton */
     }
     .footer-social svg {
-        width: 20px;/*reducir el ancho del icono */
-        height: 20px;/* reducir la altura del icono*/
+        width: 18px;/*reducir el ancho del icono */
+        height: 18px;/* reducir la altura del icono*/
     }
     
 }
@@ -84,11 +86,11 @@ footer{
         gap: 8px;/*reducir el espacio entre los iconos */
     }
     .footer-social a{
-        width: 30px;/* reducir aun mas el ancho del boton*/
-        height: 30px;/*reducir aun mas la altura del boton */
+        width: 25px;/* reducir aun mas el ancho del boton*/
+        height: 25px;/*reducir aun mas la altura del boton */
     }
     .footer-social svg {
-        width: 18px;/* reducir aun mas el ancho del icono*/
-        height: 18px;/* reducir aun mas la altura del icono*/
+        width: 16px;/* reducir aun mas el ancho del icono*/
+        height: 16px;/* reducir aun mas la altura del icono*/
     }
 }

@@ -1,21 +1,27 @@
-.SOBREMI{
-    display: flex;
-    justify-content: center; /*esto centra el elemento*/
+/* Estilos generales */
+
+section.SOBREMI{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 
 }
 .container-SOBREMI{
     display: flex;
-    width: 50%;/*ancho*/
-    padding: 2rem;
-    margin-top: 5rem;/*margen a lo alto*/
-    line-height: 2.5rem;/*espaciado entre los parrafos del texto*/
-    font-size: large;
-    color: rgb(199, 226, 226);
-    gap: 5rem;
+    flex-direction: column;
     align-items: center;
 }
 img.perfil{
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 1.5;
 }
 /* MEDIAS QUERIES */
 
@@ -30,12 +36,27 @@ img.perfil{
         font-size: small;
         flex-direction: column;
     }
+    .img-perfil {
+        width: 150px;
+        height: 150px;
+    }
+    h2 {
+        font-size: 16px;
+    }
 }
 /*tableta pantallas medianas entre 768 y 1023 px*/
 @media (min-width: 767px) and (max-width: 1023px){
     .container-SOBREMI{
         width: 75%;
     }
+    .img-perfil {
+        width: 200px;
+        height: 200px;
+      }
+    
+      h2 {
+        font-size: 18px;
+      }
 
 }
     
